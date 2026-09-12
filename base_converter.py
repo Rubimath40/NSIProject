@@ -18,6 +18,6 @@ def convert(number, base):
     while quotient != 0:
         quotient, remainder = divide(quotient, base)
         list_remainder += str(remainder)
-    return list_remainder[::-1]
+    return "".join(reversed(list_remainder))
 
 print(convert(a, b))
